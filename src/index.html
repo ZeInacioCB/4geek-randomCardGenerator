@@ -12,17 +12,40 @@
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
-  <body>
+  <body class="bg-success">
     <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+      <h1 class="mt-5">Hello Dear Friend!</h1>
+      <h2 class="mt-1">Your card below</h2>
+      <div class="bg-white my-5 mx-auto" id="random-card">
+        <p class="topleft symbol"></p>
+        <p class="centralnumber"></p>
+        <p class="bottomright symbol"></p>
+      </div>
+      <button class="btn btn-primary btn-lg" id="btn-new-card">New Card</button>
+      <div class="container-fluid mt-4 w-50">
+        <div>
+          <label for="height" class="form-label">Height</label>
+          <input
+            type="range"
+            class="form-range"
+            id="height"
+            name="height"
+            min="290"
+            max="680"
+          />
+        </div>
+
+        <div>
+          <label for="width">Width</label>
+          <input
+            type="range"
+            class="form-range"
+            id="width"
+            name="width"
+            min="160"
+            max="500"
+          />
+        </div>
       </div>
     </div>
   </body>
